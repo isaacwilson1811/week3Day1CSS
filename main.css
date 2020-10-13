@@ -12,23 +12,25 @@ body{
 p {
     margin: 10px;
 }
-
 #topNav {
+    display: flex;
     width: 100%;
     background-color: #eebb00;
     height: 40px;
     font-size: 1em;
+    flex-direction:row;
+    flex-wrap:no-wrap;
+    justify-content:space-between;
+    align-items:baseline;
 }
 #topNavLeft {
-    float: left;
-    margin-left: 20px;
-    color: #ffffff;
     padding-top: 10px;
+    padding-left: 20px;
+    color: #ffffff;
 }
 #topNavRight {
-    float: right;
-    margin-right: 20px;
     padding-top: 10px;
+    padding-right: 20px;
 }
 #topNavRight a {
     color: #ffffff;
@@ -37,21 +39,21 @@ p {
 }
 #mainContent {
     background-color: #ffeeaa;
-    clear: both;
     padding: 30px;
-    margin: 0 auto;
     width: 100%;
     height: 100%;
-    display: inline-block;
 
+}
+#wrapCenter{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 .cardContent {
     background-color: #ffffff;
     border: 2px solid #eebb00;
     border-radius: 6px;
     width: 250px;
-    float: left;
-    display: inline;
     margin: 10px;
 }
 .cardHead{
@@ -74,8 +76,4 @@ p {
     color: #ffffff;
     text-decoration: none;
     font-size: 0.9em;
-}
-#wrapCenter{
-    max-width: 1200px;
-    margin: 0 auto;
 }
